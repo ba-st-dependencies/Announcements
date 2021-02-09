@@ -1,11 +1,11 @@
 RwSimpleProjectLoadComponentV2 {
 	#name : 'Announcements',
 	#condition : 'common',
-	#projectNames : [],
+	#projectNames : [ ],
 	#componentNames : [
 		'gemstone/Announcements',
 		'tests/Announcements'
 	],
-	#packageNames : [],
+	#packageNames : [ ],
 	#comment : 'core packages for Announcements'
 }
