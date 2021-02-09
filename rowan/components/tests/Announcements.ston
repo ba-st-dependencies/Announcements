@@ -1,0 +1,10 @@
+RwSimpleProjectLoadComponentV2 {
+	#name : 'tests/Announcements',
+	#condition : 'gemstone',
+	#projectNames : [ ],
+	#componentNames : [ ],
+	#packageNames : [
+		'Announcements-Core-GemStone-Test'
+	],
+	#comment : 'test packages for Announcements'
+}

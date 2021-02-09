@@ -1,0 +1,22 @@
+RwSimpleProjectLoadComponentV2 {
+	#name : 'gemstone/Announcements',
+	#condition : 'gemstone',
+	#projectNames : [ ],
+	#componentNames : [ ],
+	#packageNames : [
+		'Announcements-Core-GemStone',
+		'Announcements-Extensions-GemStone'
+	],
+	#conditionalPackageMapSpecs : {
+		'gemstone' : {
+			'allusers' : {
+				#packageNameToPlatformPropertiesMap : {
+					'Announcements-Extensions-GemStone' : {
+						'symbolDictName' : 'Globals'
+					}
+				}
+			}
+		}
+	},
+	#comment : 'gemstone packages for Announcements'
+}
