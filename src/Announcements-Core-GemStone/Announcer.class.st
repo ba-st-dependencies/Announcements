@@ -146,6 +146,13 @@ Announcer >> unsubscribe: anObject [
 	registry removeSubscriber: anObject
 ]
 
+{ #category : 'accessing' }
+Announcer >> weak [
+	"Return an object which allows the creation of weak subscriptions"
+
+	^WeakSubscriptionBuilder on: self
+]
+
 { #category : 'registration api' }
 Announcer >> when: anAnnouncementClass do: aValuable [
 	"Declare that when anAnnouncementClass is raised, aValuable is executed.  Pay attention that such method as well as #when:do: should not be used on weak announcer since the block holds the receiver and more strongly."
