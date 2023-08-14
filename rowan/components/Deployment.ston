@@ -1,24 +1,24 @@
 RwSimpleProjectLoadComponentV2 {
-	#name : 'Deployment',
-	#projectNames : [ ],
-	#componentNames : [	],
-	#packageNames : [
+  #name : 'Deployment',
+  #projectNames : [ ],
+  #componentNames : [	],
+  #packageNames : [
     'Announcements-Core-GemStone',
-		'Announcements-Extensions-GemStone'
+    'Announcements-Extensions-GemStone'
   ],
   #conditionalPackageMapSpecs : {
-		'gemstone' : {
-			'allusers' : {
-				#packageNameToPlatformPropertiesMap : {
-					'Announcements-Extensions-GemStone' : {
-						'symbolDictName' : 'Globals'
-					},
+    'gemstone' : {
+      'allusers' : {
+        #packageNameToPlatformPropertiesMap : {
+          'Announcements-Extensions-GemStone' : {
+            'symbolDictName' : 'Globals'
+          },
           'Announcements-Core-GemStone' : {
-						'symbolDictName' : 'Announcements'
-					}
-				}
-			}
-		}
-	},
-	#comment : ''
+            'symbolDictName' : 'Announcements'
+          }
+        }
+      }
+    }
+  },
+  #comment : ''
 }

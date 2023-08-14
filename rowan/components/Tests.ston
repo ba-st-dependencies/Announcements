@@ -1,23 +1,23 @@
 RwSimpleProjectLoadComponentV2 {
-	#name : 'Tests',
-	#condition : 'tests',
+  #name : 'Tests',
+  #condition : 'tests',
   #projectNames : [ ],
   #componentNames : [
     'Deployment'
   ],
-	#packageNames : [
-		'Announcements-Core-GemStone-Test'
-	],
+  #packageNames : [
+    'Announcements-Core-GemStone-Test'
+  ],
   #conditionalPackageMapSpecs : {
-		'gemstone' : {
-			'allusers' : {
-				#packageNameToPlatformPropertiesMap : {
-					'Announcements-Core-GemStone-Test' : {
-						'symbolDictName' : 'Announcements'
-					}
-				}
-			}
-		}
-	},
-	#comment : 'Test packages for Announcements'
+    'gemstone' : {
+      'allusers' : {
+        #packageNameToPlatformPropertiesMap : {
+          'Announcements-Core-GemStone-Test' : {
+            'symbolDictName' : 'Announcements'
+          }
+        }
+      }
+    }
+  },
+  #comment : 'Test packages for Announcements'
 }
