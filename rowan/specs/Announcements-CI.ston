@@ -1,0 +1,13 @@
+RwLoadSpecificationV2 {
+  #specName: 'Announcements-CI',
+  #projectName : 'Announcements',
+  #diskUrl : '/opt/gemstone/projects/Announcements',
+  #projectSpecFile : 'rowan/project.ston',
+  #componentNames : [
+    'Tests'
+  ],
+  #customConditionalAttributes : [
+    'tests'
+  ],
+  #comment : 'Loading spec for the continuous integration setup'
+}
