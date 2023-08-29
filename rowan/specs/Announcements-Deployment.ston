@@ -6,5 +6,5 @@ RwLoadSpecificationV2 {
   #componentNames : [
     'Deployment'
   ],
-  #comment : 'Announcements development load spec'
+  #comment : 'All the packages needed in a deployed application'
 }
