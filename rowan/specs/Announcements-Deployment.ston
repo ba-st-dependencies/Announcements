@@ -1,7 +1,7 @@
 RwLoadSpecificationV2 {
   #specName : 'Announcements-Deployment',
   #projectName : 'Announcements',
-  #diskUrl : '/opt/gemstone/projects/Announcements',
+  #diskUrl : 'Announcements',
   #projectSpecFile : 'rowan/project.ston',
   #componentNames : [
     'Deployment'

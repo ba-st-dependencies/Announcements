@@ -12,12 +12,12 @@ The `release-candidate` is the branch where our changes land before releasing a 
 [![GS64 Components](https://github.com/ba-st-dependencies/Announcements/actions/workflows/loading-gs64-components.yml/badge.svg)](https://github.com/ba-st-dependencies/Announcements/actions/workflows/loading-gs64-components.yml)
 [![Markdown Lint](https://github.com/ba-st-dependencies/Announcements/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/ba-st-dependencies/Announcements/actions/workflows/markdown-lint.yml)
 
-[![GS64 3.6.6](https://img.shields.io/badge/GS64-3.6.6-informational)](https://gemtalksystems.com/products/gs64/)
+[![GS64 3.7.0](https://img.shields.io/badge/GS64-3.7.0-informational)](https://gemtalksystems.com/products/gs64/)
 
 The announcement framework is an event notification framework. Compared to "traditional"
 event systems in this new framework, an event is a real object rather than a symbol.
 An event someone might want to announce, such as a button click or an attribute
-change, is defined as a subclass of the abstract superclass Announcement.
+change, is defined as a subclass of the abstract superclass `Announcement`.
 
 The subclass can have instance variables for additional information to pass along,
 such as a timestamp, or mouse coordinates at the time of the event, or the old

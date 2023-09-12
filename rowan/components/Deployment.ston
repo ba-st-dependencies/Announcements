@@ -15,6 +15,5 @@ RwSimpleProjectLoadComponentV2 {
         }
       }
     }
-  },
-  #comment : ''
+  }
 }
