@@ -182,7 +182,8 @@ AnnouncerTest >> testSubscribeOnSpecificAnnouncer [
 	| announcement instance |
 	announcer
 		when: (AnnouncementMockB where: [ :ann | ann parameter = #expectedParam ])
-		do: [ :ann | announcement := ann ].
+		do: [ :ann | announcement := ann ]
+		for: self.
 	announcement := nil.
 	instance := announcer announce: AnnouncementMockA.
 	self assert: announcement equals: nil.
