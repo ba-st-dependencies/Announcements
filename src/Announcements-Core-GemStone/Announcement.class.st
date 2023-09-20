@@ -42,6 +42,12 @@ Announcement class >> new [
 		yourself.
 ]
 
+{ #category : 'public' }
+Announcement class >> where: instancesFilterBlock [
+
+	^AnnouncementDeliveryCondition for: self where: instancesFilterBlock
+]
+
 { #category : 'converting' }
 Announcement >> asAnnouncement [
 	^ self

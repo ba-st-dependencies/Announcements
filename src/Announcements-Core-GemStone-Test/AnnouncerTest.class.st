@@ -177,6 +177,31 @@ AnnouncerTest >> testPreparationAnnouncementDeliveryWhenNoSubscriptions [
 	self assert: instance announcingCounter equals: 0
 ]
 
+{ #category : 'tests' }
+AnnouncerTest >> testSubscribeOnSpecificAnnouncer [
+	| announcement instance |
+	announcer
+		when: (AnnouncementMockB where: [ :ann | ann parameter = #expectedParam ])
+		do: [ :ann | announcement := ann ].
+	announcement := nil.
+	instance := announcer announce: AnnouncementMockA.
+	self assert: announcement equals: nil.
+	announcement := nil.
+	instance := announcer announce: AnnouncementMockB.
+	self assert: announcement equals: nil.
+	announcement := nil.
+	instance := announcer announce: (AnnouncementMockB with: #wrongParam).
+	self assert: announcement equals: nil.
+	announcement := nil.
+	instance := announcer
+		announce: (AnnouncementMockB with: #expectedParam).
+	self assert: announcement equals: instance.
+	announcement := nil.
+	instance := announcer
+		announce: (AnnouncementMockC with: #expectedParam).
+	self assert: announcement equals: instance
+]
+
 { #category : 'tests - subscribing' }
 AnnouncerTest >> testSubscribeBlock [
 	| announcement instance |
